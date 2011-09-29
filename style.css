@@ -1,0 +1,63 @@
+/**
+ * Theme Name: BP FB Style Activity Commenting Demo
+ * Theme URI: http://buddydev.com
+ * Version:1.0
+ * Description: Facebook style comment demonstration Theme
+ * Author:Brajesh Singh
+ * Tags:  buddypress
+ * Template: bp-default
+*/
+
+/*FB style activity comment form css*/
+/*
+If you want to make the form visible for all activities, remove the li.has-comments from the first line below */
+
+
+li.has-comments div.activity-comments form.ac-form {
+    display:block;
+    margin:0 0 5px 0;
+}
+.ac-form .ac-reply-avatar{
+    display:none;
+}
+
+div.activity-comments form div.ac-reply-content{
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 5px;
+     height:35px;/* you may need to adjust height according to the one you choose for your textarea*/
+}
+
+div.activity-comments form textarea {
+    height: 13px;
+}
+div.activity-comments form input[type='submit']{
+    display:none;
+}
+
+/*on active/focus*/
+form.active .ac-reply-avatar{
+    float:left;
+    display: block;
+}
+form.active .ac-reply-avatar img.avatar {
+    float: left;
+    margin: 0 3px 0 0;
+     height: 25px;
+    
+    width: 25px;
+}
+div.activity-comments form.active div.ac-reply-content{
+    height:auto;
+}
+form.active .ac-textarea{
+
+    margin-bottom: 10px;
+    padding: 8px;
+    padding-top:0;
+    }
+    div.activity-comments form.active div.ac-reply-content{
+    margin-left: 30px;
+    padding-left: 2px;
+    
+}

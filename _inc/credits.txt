@@ -1,0 +1,2 @@
+I have included the jquery Autogrow Textarea from the https://github.com/jaz303/jquery-grab-bag/blob/master/javascripts/jquery.autogrow-textarea.js
+The plugin was written by Jason Frame [http://onehackoranother.com/projects/jquery/jquery-grab-bag/]
