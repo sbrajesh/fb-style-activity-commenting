@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
  jq('.ac-textarea textarea').autogrow();
  
  //on focus, add remove active class
- jq('.ac-textarea textarea').live('focus', function(){
+ jq(document).on('focus','.ac-textarea textarea', function(){
      var ac_form=jq(this).parent().parent().parent();//parent form
          ac_form.addClass('active');
 		
@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
 
      
    /* Handle the ESC/ENTER key with more specific element and cancel even bubbling for these actions to void bp-default's way of handling this */
-jq('.ac-textarea textarea').keydown( function(e) {
+jq(document).on('keydown','.ac-textarea textarea', function(e) {
 	 element = e.target;
 		
 	//if meta keys, don't do anything	
