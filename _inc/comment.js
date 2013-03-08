@@ -68,7 +68,7 @@ jq('.ac-textarea textarea').keydown( function(e) {
 			}
 
 			/* Hide any error messages */
-			jq( 'form#' + form + ' div.error').hide();
+			jq( 'form#' + form_parent.attr('id') + ' div.error').hide();
 			target.next('.loader').addClass('loading').end().prop('disabled', true);
 
 			jq.post( ajaxurl, {
@@ -101,7 +101,7 @@ jq('.ac-textarea textarea').keydown( function(e) {
 							form.parent().parent().addClass('has-comments');
 						}
 					);//form hiding
-					jq( 'form#' + form + ' textarea').val('');
+					jq( 'form#' + form_parent.attr('id') + ' textarea').val('');
                                         target.height(20);
                                       //  form.removeClass('active');
                                         form.fadeIn(200);
