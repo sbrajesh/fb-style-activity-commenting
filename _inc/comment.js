@@ -1,5 +1,8 @@
-jQuery(document).ready(function(){
+jQuery(document).ready( function() {
+	
+	
  var jq=jQuery;
+ 
  //we do no want to keep the value to mess our layout, and we do not want to do the complex calculations too
  jq("form.ac-form textarea").val('');
  
@@ -16,7 +19,6 @@ jQuery(document).ready(function(){
          ac_form.addClass('active');
 		
          jq('.ac-textarea').parents('form.ac-form').not(ac_form).removeClass('active');
-                
                
   });
 
