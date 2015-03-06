@@ -11,7 +11,7 @@ function bp_fbstyle_comment_js() {
 	if( ! is_user_logged_in() )
         return ;//we do not want to include the js
     
-	wp_enqueue_script( 'bpfb-comment-js', get_stylesheet_directory_uri() . '/_inc/comment.js', array( 'jquery', 'dtheme-ajax-js' ) );
+	wp_enqueue_script( 'bpfb-comment-js', get_stylesheet_directory_uri() . '/_inc/comment.js', array( 'jquery','jquery-effects-core', 'dtheme-ajax-js' ) );
   
 	wp_enqueue_script( 'bpfb-comment-autogrow-js', get_stylesheet_directory_uri() . '/_inc/jquery.autogrow-textarea.js', array( 'jquery' ) );
 }
